@@ -13,11 +13,11 @@ $statement->closeCursor();
 <?php
 include('includes/header.php');
 ?>
-        <h1>Add Record</h1>
+        <h1>Add New Coffee +</h1>
         <form action="add_record.php" method="post" enctype="multipart/form-data"
               id="add_record_form">
 
-            <label>Category:</label>
+            <label>Coffee</label>
             <select name="category_id">
             <?php foreach ($categories as $category) : ?>
                 <option value="<?php echo $category['categoryID']; ?>">
@@ -42,7 +42,7 @@ include('includes/header.php');
             <input type="submit" value="Add Record">
             <br>
         </form>
-        <p><a href="index.php">View Homepage</a></p>
+        <p><a href="index.php">Back to Homepage <----- </a></p>
     <?php
 include('includes/footer.php');
 ?>

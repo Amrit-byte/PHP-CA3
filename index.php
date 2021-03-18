@@ -42,11 +42,11 @@ $statement3->closeCursor();
 <?php
 include('includes/header.php');
 ?>
-<h1>Record List</h1>
+<h1>Coffee List</h1>
 
 <aside>
 <!-- display a list of categories -->
-<h2>Categories</h2>
+<h2>COFFEES</h2>
 <nav>
 <ul>
 <?php foreach ($categories as $category) : ?>
@@ -94,8 +94,8 @@ value="<?php echo $record['categoryID']; ?>">
 </tr>
 <?php endforeach; ?>
 </table>
-<p><a href="add_record_form.php">Add Record</a></p>
-<p><a href="category_list.php">Manage Categories</a></p>
+<p><a href="add_record_form.php">Add Coffee</a></p>
+<p><a href="category_list.php">Manage Coffee</a></p>
 </section>
 <?php
 include('includes/footer.php');

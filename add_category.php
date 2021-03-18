@@ -1,10 +1,10 @@
 <?php
-// Get the category data
+// Get the coffee data
 $name = $name = filter_input(INPUT_POST, 'name');
 
 // Validate inputs
 if ($name == null) {
-    $error = "Invalid category data. Check all fields and try again.";
+    $error = "Invalid coffee data. Check all fields and try again.";
     include('error.php');
 } else {
     require_once('database.php');
