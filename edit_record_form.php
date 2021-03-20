@@ -28,9 +28,19 @@ include('includes/header.php');
                    value="<?php echo $records['categoryID']; ?>">
             <br>
 
+            <label>Origin:</label>
+            <input type="input" name="CountryofOrigin"
+                   value="<?php echo $records['CountryofOrigin']; ?>">
+            <br>
+
             <label>Name:</label>
             <input type="input" name="name"
                    value="<?php echo $records['name']; ?>">
+            <br>
+
+            <label>Description:</label>
+            <input type="input" name="Description"
+                   value="<?php echo $records['Description']; ?>">
             <br>
 
             <label>List Price:</label>
