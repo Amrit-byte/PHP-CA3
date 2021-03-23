@@ -27,19 +27,19 @@ $statement->closeCursor();
         <br>
 
         <label>Origin:</label>
-        <input type="input" name="CountryofOrigin">
+        <input type="input" name="CountryofOrigin" placeholder="Name of Country">
         <br>
 
         <label>Name:</label>
-        <input type="input" name="name">
+        <input type="input" name="name" required placeholder="English Name (coffee)">
         <br>
 
         <label>Description:</label>
-        <input type="input" name="Description">
+        <input type="input" name="Description" placeholder="Min 3 words required">
         <br>
 
         <label>List Price:</label>
-        <input type="input" name="price">
+        <input type="input" name="price" required placeholder="Decimals with 2 places">
         <br>
 
         <label>Image:</label>
