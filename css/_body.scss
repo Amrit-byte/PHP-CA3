@@ -70,30 +70,3 @@ br {
 
 
 
-/********************************************************************
-* Additional styles for the record Manager application
-********************************************************************/
-#add_record_form {
-    margin: .5em 0 1em;
-
-    label {
-        width: 6em;
-        padding-right: 1em;
-        padding-bottom: .5em;
-        float: left;
-    }
-}
-
-#add_record_form input {
-    float: left;
-
-    input[text] {
-        width: 15em;
-    }
-}
-
-.group:after {
-    content: "";
-    display: table;
-    clear: both;
-  }

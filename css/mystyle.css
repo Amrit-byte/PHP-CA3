@@ -75,6 +75,38 @@ br {
   margin-top: 1em;
 }
 
+/*
+
+HERE IS WHERE THE HEADER STYLING STARTS
+
+*/
+header {
+  margin: 0;
+  border-bottom: 2px solid black;
+  background-color: white;
+}
+
+header h1 {
+  margin: 0;
+  padding: .5em 0;
+  color: black;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+nav ul li {
+  padding-bottom: 0.5em;
+}
+
+/*
+
+HERE IS WHERE THE FORMS STYLING STARTS
+
+*/
 /********************************************************************
 * Additional styles for the record Manager application
 ********************************************************************/
@@ -101,33 +133,6 @@ br {
   content: "";
   display: table;
   clear: both;
-}
-
-/*
-
-HERE IS WHERE THE HEADER STYLING STARTS
-
-*/
-header {
-  margin: 0;
-  border-bottom: 2px solid black;
-  background-color: white;
-}
-
-header h1 {
-  margin: 0;
-  padding: .5em 0;
-  color: black;
-}
-
-nav ul {
-  list-style-type: none;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-nav ul li {
-  padding-bottom: 0.5em;
 }
 
 /*
