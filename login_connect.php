@@ -10,16 +10,16 @@
  */
  
 //Our MySQL user account.
-define('MYSQL_USER', 'root');
+define('MYSQL_USER', 'D00226038');
  
 //Our MySQL password.
-define('MYSQL_PASSWORD', 'root');
+define('MYSQL_PASSWORD', 'BWzhA2Q4');
  
 //The server that MySQL is located on.
-define('MYSQL_HOST', 'localhost');
+define('MYSQL_HOST', 'mysql04');
 
 //The name of our database.
-define('MYSQL_DATABASE', 'shoes');
+define('MYSQL_DATABASE', 'coffee_database');
 
 /**
  * PDO options / configuration details.
