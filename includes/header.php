@@ -22,9 +22,9 @@
             <a href="manage-coffee.php"><i class="fa fa-bars"></i> Manage Coffee</a>
             <a href="category_list.php"><i class="fa fa-bars"></i> Manage Category</a>
             <a href="contact.php"><i class="fa fa-search"></i> Contact</a>
-            <a href="#"><i class="fa fa-male"></i> Register</a>
-            <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
-            <a href="#"><i class="fa fa-close"></i> Logout</a>
+            <a href="register.php"><i class="fa fa-male"></i> Register</a>
+            <a href="login.php"><i class="fa fa-fw fa-user"></i> Login</a>
+            <a href="logout.php"><i class="fa fa-close"></i> Logout</a>
             
         </div>
     </header>

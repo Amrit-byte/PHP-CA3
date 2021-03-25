@@ -8,13 +8,13 @@
  * Customize these to match your MySQL database connection details.
  * This info should be available from within your hosting panel.
  */
- 
+
 //Our MySQL user account.
 define('MYSQL_USER', 'root');
- 
+
 //Our MySQL password.
-define('MYSQL_PASSWORD', 'root');
- 
+define('MYSQL_PASSWORD', '');
+
 //The server that MySQL is located on.
 define('MYSQL_HOST', 'localhost');
 

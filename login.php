@@ -11,7 +11,7 @@ session_start();
 /**
  * Include ircmaxell's password_compat library.
  */
-require 'lib/password.php';
+require 'library-password/password.php';
 
 /**
  * Include our MySQL connection.

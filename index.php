@@ -79,7 +79,7 @@ $statement3->closeCursor();
                     <td><?php echo $record['CountryofOrigin']; ?></td>
                     <td><?php echo $record['name']; ?></td>
                     <td><?php echo $record['Description']; ?></td>
-                    <td><?php echo $record['price']; ?></td>  
+                    <td><?php echo $record['price']; ?></td>
                 </tr>
             <?php endforeach; ?>
         </table>
