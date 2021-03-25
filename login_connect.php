@@ -10,13 +10,13 @@
  */
  
 //Our MySQL user account.
-define('MYSQL_USER', 'D00226038');
+define('MYSQL_USER', 'root');
  
 //Our MySQL password.
-define('MYSQL_PASSWORD', 'BWzhA2Q4');
+define('MYSQL_PASSWORD', 'root');
  
 //The server that MySQL is located on.
-define('MYSQL_HOST', 'mysql04');
+define('MYSQL_HOST', 'localhost');
 
 //The name of our database.
 define('MYSQL_DATABASE', 'coffee_database');
