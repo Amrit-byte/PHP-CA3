@@ -19,7 +19,8 @@
         <div class="navbar">
             <a class="active" href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
             <a href="add_record_form.php"><i class="fa fa-refresh"></i> Add Coffee</a>
-            <a href="category_list.php"><i class="fa fa-bars"></i> Manage Coffee</a>
+            <a href="manage-coffee.php"><i class="fa fa-bars"></i> Manage Coffee</a>
+            <a href="category_list.php"><i class="fa fa-bars"></i> Manage Category</a>
             <a href="contact.php"><i class="fa fa-search"></i> Contact</a>
             <a href="#"><i class="fa fa-male"></i> Register</a>
             <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
