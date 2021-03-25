@@ -6,6 +6,7 @@ HERE IS WHERE THE BODY STYLING STARTS
 
 body {
     background-color: #ccc;
+    
 }
 
 .container {
@@ -14,7 +15,7 @@ body {
     width: 1000px;
     margin: 0 auto;
     background-color: white;
-    border: 1px solid black;
+    // border-radius: 30%;
     padding: .5em 2em;
 }
 
@@ -33,19 +34,18 @@ li {
     padding: 0;
 }
 a {
+    font-family: 'Montez', cursive;
     color: rgb(41, 64, 124);
-    font-weight: bold;
+    font-weight: lighter;
+    font-size: xx-large;
     a:hover {
         color: rgb(208, 133, 4);
     }
 }
 
-table {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
 td, th {
-    border: 1px dashed black;
+    font-family: 'Dancing Script', cursive;
+    font-size: larger;
     padding: .2em .5em .2em .5em;
     vertical-align: top;
     text-align: left;

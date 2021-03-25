@@ -64,7 +64,7 @@ $statement3->closeCursor();
 
     <section>
         <!-- display a table of records -->
-        <h2><?php echo $category_name; ?></h2>
+        <br>
         <table>
             <tr>
                 <th>Image</th>
@@ -99,8 +99,7 @@ $statement3->closeCursor();
                 </tr>
             <?php endforeach; ?>
         </table>
-        <p><a href="add_record_form.php">Add Coffee</a></p>
-        <p><a href="category_list.php">Manage Coffee</a></p>
+
     </section>
     <?php
     include('includes/footer.php');

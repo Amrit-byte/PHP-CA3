@@ -50,8 +50,7 @@ $statement->closeCursor();
         <input type="submit" value="Add Record">
         <br>
     </form>
-    <p><a href="index.php">Back to Homepage <----- </a>
-    </p>
+
     <?php
     include('includes/footer.php');
     ?>

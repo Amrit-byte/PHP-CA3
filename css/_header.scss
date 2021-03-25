@@ -11,9 +11,12 @@ header {
     background-color:white;
 
     h1 {
+        // font-family: 'Lobster Two', cursive;
+        font-family: 'Orbitron', sans-serif;
         margin: 0;
         padding: .5em 0;
         color: black;
+        text-align: center;
     }
 }
 
@@ -30,3 +33,37 @@ nav
         }
     }
 }
+
+
+/* Style the topnav navigation bar */
+.navbar {
+    width: 100%;
+    background-color: rgb(54, 107, 223);
+    overflow: auto;
+    
+
+     /* Navbar links */
+    a {
+      float: left;
+      text-align: center;
+      padding: 12px;
+      color: lavenderblush;
+      text-decoration: none;
+      font-size:220%;
+
+       /* Navbar links on mouse-over */
+      a:hover {
+        background-color: #000;
+      }
+
+    }
+
+  }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
