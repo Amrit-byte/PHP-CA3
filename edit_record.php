@@ -4,6 +4,7 @@
 $record_id = filter_input(INPUT_POST, 'record_id', FILTER_VALIDATE_INT);
 $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
 $CountryofOrigin = filter_input(INPUT_POST, 'CountryofOrigin');
+$Year = filter_input(INPUT_POST, 'Year');
 $name = filter_input(INPUT_POST, 'name');
 $Description = filter_input(INPUT_POST, 'Description');
 $price = filter_input(INPUT_POST, 'price', FILTER_VALIDATE_FLOAT);
@@ -15,6 +16,7 @@ if (
     $category_id == NULL ||
     $category_id == FALSE ||
     $CountryofOrigin == NULL ||
+    $Year == NULL ||
     empty($name) ||
     $Description == NULL ||
     $price == NULL ||
@@ -66,9 +68,10 @@ image = :image
 WHERE recordID = :record_id';
     $statement = $db->prepare($query);
     $statement->bindValue(':category_id', $category_id);
-    $statement->bindValue(':name', $CountryofOrigin);
-    $statement->bindValue(':name', $name);
-    $statement->bindValue(':name', $Description);
+    $statement->bindValue(':CountryofOrigin', $CountryofOrigin);
+    $statement->bindValue(':Year', $Year);
+    $statement->bindValue(':Name', $name);
+    $statement->bindValue(':Description', $Description);
     $statement->bindValue(':price', $price);
     $statement->bindValue(':image', $image);
     $statement->bindValue(':record_id', $record_id);

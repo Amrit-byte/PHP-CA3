@@ -52,6 +52,10 @@ $statement->closeCursor();
         <input type="input" name="CountryofOrigin" placeholder="Name of Country">
         <br>
 
+        <label>Year:</label>
+        <input type="input" name="Year" placeholder="Year of Origin">
+        <br>
+
         <label>Name:</label>
         <input type="input" name="name" required placeholder="English Name (coffee)">
         <br>
