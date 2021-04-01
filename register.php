@@ -81,10 +81,10 @@ if (isset($_POST['register'])) {
     ?>
     <h1>Register</h1>
     <form action="register.php" method="post">
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username"><br>
-        <label for="password">Password</label>
-        <input type="text" id="password" name="password"><br>
+        <label for="username">User Name:</label>
+        <input type="text" name="username" id="username" size="50" onBlur="username_validation();" /><span id="name_err"></span>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" size="12" onBlur="passwd_validation();" /><span id="passwd_err"></span>
         <input type="submit" name="register" value="Register"></button>
     </form>
     <?php
