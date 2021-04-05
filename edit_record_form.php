@@ -16,7 +16,7 @@ $statement->closeCursor();
        <?php
        include('includes/header.php');
        ?>
-       <h1>Edit Coffee</h1>
+       <h1>Edit Product</h1>
        <form action="edit_record.php" method="post" enctype="multipart/form-data" id="add_record_form">
               <input type="hidden" name="original_image" value="<?php echo $records['image']; ?>" />
               <input type="hidden" name="record_id" value="<?php echo $records['recordID']; ?>">
@@ -25,16 +25,8 @@ $statement->closeCursor();
               <input type="category_id" name="category_id" value="<?php echo $records['categoryID']; ?>">
               <br>
 
-              <label>Origin:</label>
-              <input type="input" name="CountryofOrigin" placeholder="Name of Country" id="CountryofOriginid" size="12" onBlur="CountryofOrigin_validation();" value="<?php echo $records['CountryofOrigin']; ?>" /><span id="CountryofOriginid_err"></span>
-              <br>
-
               <label>Name:</label>
               <input type="input" name="name" placeholder="English Name (coffee)" id="name" size="50" onBlur="name_validation();" value="<?php echo $records['name']; ?>" /><span id="name_err"></span>
-              <br>
-
-              <label>Description:</label>
-              <input type="input" name="Description" placeholder="Min 3 words required" value="<?php echo $records['Description']; ?>">
               <br>
 
               <label>List Price:</label>
@@ -52,8 +44,7 @@ $statement->closeCursor();
               <input type="submit" value="Save Changes">
               <br>
        </form>
-       <p><a href="index.php">Back to Homepage <----- </a>
-       </p>
+       <p><a href="index.php">View Homepage</a></p>
        <?php
        include('includes/footer.php');
        ?>

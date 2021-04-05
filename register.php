@@ -24,6 +24,7 @@ if (isset($_POST['register'])) {
     //Retrieve the field values from our registration form.
     $username = !empty($_POST['username']) ? trim($_POST['username']) : null;
     $pass = !empty($_POST['password']) ? trim($_POST['password']) : null;
+    $email = !empty($_POST['email']) ? trim($_POST['email']) : null;
 
     //TO ADD: Error checking (username characters, password length, etc).
     //Basically, you will need to add your own error checking BEFORE
@@ -57,12 +58,13 @@ if (isset($_POST['register'])) {
 
     //Prepare our INSERT statement.
     //Remember: We are inserting a new row into our users table.
-    $sql = "INSERT INTO users (username, password) VALUES (:username, :password)";
+    $sql = "INSERT INTO users (username, password,email) VALUES (:username, :password,:email)";
     $stmt = $pdo->prepare($sql);
 
     //Bind our variables.
     $stmt->bindValue(':username', $username);
     $stmt->bindValue(':password', $passwordHash);
+    $stmt->bindValue(':email', $email);
 
     //Execute the statement and insert the new account.
     $result = $stmt->execute();
@@ -81,10 +83,16 @@ if (isset($_POST['register'])) {
     ?>
     <h1>Register</h1>
     <form action="register.php" method="post">
+
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" placeholder="example@gmail.com" class="text-input" size="50" onBlur="email_validation();" /><span id="email_err"></span>
+        <br>
         <label for="username">User Name:</label>
         <input type="text" name="username" id="username" size="50" onBlur="username_validation();" /><span id="name_err"></span>
+        <br>
         <label for="password">Password:</label>
-        <input type="password" name="password" id="password" size="12" onBlur="passwd_validation();" /><span id="passwd_err"></span>
+        <input type="password" name="password" id="password" size="12" onBlur="password_validation();" /><span id="password_err"></span>
+        <br>
         <input type="submit" name="register" value="Register"></button>
     </form>
     <?php

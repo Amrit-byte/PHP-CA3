@@ -3,24 +3,20 @@
 // Get the record data
 $record_id = filter_input(INPUT_POST, 'record_id', FILTER_VALIDATE_INT);
 $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
-$CountryofOrigin = filter_input(INPUT_POST, 'CountryofOrigin');
 $name = filter_input(INPUT_POST, 'name');
-$Description = filter_input(INPUT_POST, 'Description');
 $price = filter_input(INPUT_POST, 'price', FILTER_VALIDATE_FLOAT);
 
 // Validate inputs
 if (
-    $record_id == null ||
-    $record_id == false ||
-    $category_id == null ||
-    $category_id == false ||
-    $CountryofOrigin == null ||
-    $name == null ||
-    $Description == null ||
-    $price == null ||
-    $price == false
+    $record_id == NULL ||
+    $record_id == FALSE ||
+    $category_id == NULL ||
+    $category_id == FALSE ||
+    empty($name) ||
+    $price == NULL ||
+    $price == FALSE
 ) {
-    $error = "Invalid coffee data. Check all fields and try again.";
+    $error = "Invalid Coffee data. Check all fields and try again.";
     include('error.php');
 } else {
 
@@ -65,13 +61,11 @@ price = :price,
 image = :image
 WHERE recordID = :record_id';
     $statement = $db->prepare($query);
+    $statement->bindValue(':record_id', $record_id);
     $statement->bindValue(':category_id', $category_id);
-    $statement->bindValue(':CountryofOrigin', $CountryofOrigin);
-    $statement->bindValue(':Name', $name);
-    $statement->bindValue(':Description', $Description);
+    $statement->bindValue(':name', $name);
     $statement->bindValue(':price', $price);
     $statement->bindValue(':image', $image);
-    $statement->bindValue(':record_id', $record_id);
     $statement->execute();
     $statement->closeCursor();
 

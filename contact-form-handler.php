@@ -2,29 +2,29 @@
 $errors = '';
 $myemail = 'D00226038@student.dkit.ie'; //<-----Put your DkIT email address here.
 if (
-	empty($_POST['name'])  ||
+	empty($_POST['username'])  ||
 	empty($_POST['phone'])  ||
 	empty($_POST['address'])  ||
-	empty($_POST['pincode'])  ||
+	empty($_POST['zip'])  ||
 	empty($_POST['email']) ||
 	empty($_POST['message'])
 ) {
 	$errors .= "\n Error: all fields are required";
 }
 
-$name = $_POST['name'];
+$username = $_POST['username'];
 $phone = $_POST['phone'];
 $address = $_POST['address'];
-$pincode = $_POST['pincode'];
+$zip = $_POST['zip'];
 $email_address = $_POST['email'];
 $message = $_POST['message'];
 
 
 if (!preg_match(
 	"/^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$/i",
-	$name
+	$username
 )) {
-	$errors .= "\n Error: Invalid name";
+	$errors .= "\n Error: Invalid Name";
 }
 
 if (!preg_match(
@@ -38,9 +38,9 @@ if (!preg_match(
 
 if (empty($errors)) {
 	$to = $myemail;
-	$email_subject = "Contact form submission: $name";
+	$email_subject = "Contact form submission: $username";
 	$email_body = "You have received a new message. " .
-		" Here are the details:\n Name: $name :\n Phone: $phone :\n Address: $address :\n Pincode: $pincode \n Email: $email_address \n Message \n $message";
+		" Here are the details:\n Name: $username :\n Phone: $phone :\n Address: $address :\n zip: $zip \n Email: $email_address \n Message \n $message";
 
 	$headers = "From: $myemail\n";
 	$headers .= "Reply-To: $email_address";
