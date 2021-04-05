@@ -49,22 +49,18 @@ $statement->closeCursor();
         <br>
 
         <label>Origin:</label>
-        <input type="input" name="CountryofOrigin" placeholder="Name of Country">
-        <br>
-
-        <label>Year:</label>
-        <input type="input" name="Year" placeholder="Year of Origin">
+        <input type="input" name="CountryofOrigin" placeholder="Name of Country" id="CountryofOriginid" size="12" onBlur="CountryofOrigin_validation();" /><span id="CountryofOriginid_err"></span>
         <br>
 
         <label>Name:</label>
-        <input type="input" name="name" required placeholder="English Name (coffee)">
+        <input type="input" name="name" required placeholder="English Name (coffee)" id="name" size="50" onBlur="name_validation();" /><span id="name_err"></span>
         <br>
 
         <label>Description:</label>
-        <input type="input" name="Description" placeholder="Min 3 words required">
+        <input type="input" name="Description" placeholder="Min 2 words required">
         <br>
 
-        <label>List Price:</label>
+        <label>Price:</label>
         <input type="input" name="price" required placeholder="Decimals with 2 places">
         <br>
 

@@ -69,7 +69,6 @@ $statement3->closeCursor();
             <tr>
                 <th>Image</th>
                 <th>Country of Origin</th>
-                <th>Year</th>
                 <th>Name</th>
                 <th>Description</th>
                 <th>Price</th>
@@ -78,7 +77,6 @@ $statement3->closeCursor();
                 <tr>
                     <td><img src="image_uploads/<?php echo $record['image']; ?>" width="100px" height="100px" /></td>
                     <td><?php echo $record['CountryofOrigin']; ?></td>
-                    <td><?php echo $record['Year']; ?></td>
                     <td><?php echo $record['name']; ?></td>
                     <td><?php echo $record['Description']; ?></td>
                     <td><?php echo $record['price']; ?></td>

@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Load an icon library -->
     <script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
     <script language="JavaScript" src="scripts/registration-validation.js" type="text/javascript"></script>
+    <script language="JavaScript" src="scripts/add-form-validation.js" type="text/javascript"></script>
+    <script language="JavaScript" src="scripts/edit-form-validation.js" type="text/javascript"></script>
+    <script language="JavaScript" src="scripts/contact-form-validation.js" type="text/javascript"></script>
 </head>
 
 <!-- the body section -->

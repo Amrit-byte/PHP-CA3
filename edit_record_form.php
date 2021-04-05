@@ -26,15 +26,11 @@ $statement->closeCursor();
               <br>
 
               <label>Origin:</label>
-              <input type="input" name="CountryofOrigin" placeholder="Name of Country" value="<?php echo $records['CountryofOrigin']; ?>">
-              <br>
-
-              <label>Year:</label>
-              <input type="input" name="Year" placeholder="Year of Origin" value="<?php echo $records['Year']; ?>">
+              <input type="input" name="CountryofOrigin" placeholder="Name of Country" id="CountryofOriginid" size="12" onBlur="CountryofOrigin_validation();" value="<?php echo $records['CountryofOrigin']; ?>" /><span id="CountryofOriginid_err"></span>
               <br>
 
               <label>Name:</label>
-              <input type="input" name="name" placeholder="English Name (coffee)" value="<?php echo $records['name']; ?>">
+              <input type="input" name="name" placeholder="English Name (coffee)" id="name" size="50" onBlur="name_validation();" value="<?php echo $records['name']; ?>" /><span id="name_err"></span>
               <br>
 
               <label>Description:</label>

@@ -3,7 +3,6 @@
 // Get the product data
 $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
 $CountryofOrigin = filter_input(INPUT_POST, 'CountryofOrigin');
-$Year = filter_input(INPUT_POST, 'Year');
 $name = filter_input(INPUT_POST, 'name');
 $Description = filter_input(INPUT_POST, 'Description');
 $price = filter_input(INPUT_POST, 'price', FILTER_VALIDATE_FLOAT);
@@ -13,7 +12,6 @@ if (
     $category_id == null ||
     $category_id == false ||
     $CountryofOrigin == null ||
-    $Year == null ||
     $name == null ||
     $Description == null ||
     $price == null ||
@@ -74,9 +72,9 @@ if (
 
     // Add the product to the database 
     $query = "INSERT INTO records
-                 (categoryID, name, price, image,CountryofOrigin,Description,Year)
+                 (categoryID, name, price, image,CountryofOrigin,Description)
               VALUES
-                 (:category_id, :name, :price, :image, :CountryofOrigin,:Description,:Year)";
+                 (:category_id, :name, :price, :image, :CountryofOrigin,:Description)";
     $statement = $db->prepare($query);
     $statement->bindValue(':category_id', $category_id);
     $statement->bindValue(':name', $name);
@@ -84,7 +82,6 @@ if (
     $statement->bindValue(':image', $image);
     $statement->bindValue(':CountryofOrigin', $CountryofOrigin);
     $statement->bindValue(':Description', $Description);
-    $statement->bindValue(':Year', $Year);
     $statement->execute();
     $statement->closeCursor();
 
