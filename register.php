@@ -85,13 +85,13 @@ if (isset($_POST['register'])) {
     <form action="register.php" method="post">
 
         <label for="email">Email</label>
-        <input type="text" name="email" id="email" placeholder="example@gmail.com" class="text-input" size="50" onBlur="email_validation();" /><span id="email_err"></span>
+        <input type="text" name="email" id="email" required placeholder="example@gmail.com" class="text-input" size="50" onBlur="email_validation();" /><span id="email_err"></span>
         <br>
         <label for="username">User Name:</label>
-        <input type="text" name="username" id="username" size="50" onBlur="username_validation();" /><span id="name_err"></span>
+        <input type="text" name="username" id="username" required placeholder="Emily Forest" size="50" onBlur="username_validation();" /><span id="name_err"></span>
         <br>
         <label for="password">Password:</label>
-        <input type="password" name="password" id="password" size="12" onBlur="password_validation();" /><span id="password_err"></span>
+        <input type="password" name="password" id="password" required placeholder="Emilyforest123" size="12" onBlur="password_validation();" /><span id="password_err"></span>
         <br>
         <input type="submit" name="register" value="Register"></button>
     </form>

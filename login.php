@@ -79,15 +79,15 @@ if (isset($_POST['login'])) {
     <form action="login.php" method="post">
 
         <label for="email">Email</label>
-        <input type="text" id="email" name="email" placeholder="example@gmail.com" class="text-input" size="50" onBlur="email_validation();" /><span id="email_err"></span>
+        <input type="text" id="email" name="email" required placeholder="example@gmail.com" class="text-input" size="50" onBlur="email_validation();" /><span id="email_err"></span>
         <br>
 
         <label for="username">Username</label>
-        <input type="text" id="username" name="username" size="50" onBlur="username_validation();" /><span id="name_err"></span>
+        <input type="text" id="username" name="username" required placeholder="Simon Clarke" size="50" onBlur="username_validation();" /><span id="name_err"></span>
         <br>
 
         <label for="password">Password</label>
-        <input type="text" id="password" name="password" size="12" onBlur="password_validation();" /><span id="password_err"></span>
+        <input type="text" id="password" name="password" required placeholder="Simonclarke123" size="12" onBlur="password_validation();" /><span id="password_err"></span>
         <br>
 
         <input type="submit" name="login" value="Login">

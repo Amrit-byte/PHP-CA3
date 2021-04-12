@@ -53,14 +53,6 @@ $statement2->execute();
 $categories = $statement2->fetchAll();
 $statement2->closeCursor();
 
-// Get all Users
-$queryAllUsers = 'SELECT * FROM users
-ORDER BY id';
-$statement2 = $db->prepare($queryAllUsers);
-$statement2->execute();
-$categories = $statement2->fetchAll();
-$statement2->closeCursor();
-
 // Get records for selected category
 $queryRecords = "SELECT * FROM records
 WHERE categoryID = :category_id
