@@ -19,7 +19,7 @@ $statement->closeCursor();
        <?php
        include('includes/header.php');
        ?>
-       <h1 id="editrecord-heading">Edit Product</h1>
+       <h1 id="editrecord-heading">Edit Product<br><i class="fa fa-edit"></i></h1>
        <form action="edit_record.php" method="post" enctype="multipart/form-data" id="add_record_form">
               <input type="hidden" name="original_image" value="<?php echo $records['image']; ?>" />
               <input type="hidden" name="record_id" value="<?php echo $records['recordID']; ?>">

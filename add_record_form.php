@@ -39,7 +39,7 @@ $statement->closeCursor();
     <?php
     include('includes/header.php');
     ?>
-    <h1 id="addrecord-heading">Add New Coffee</h1>
+    <h1 id="addrecord-heading">Add New Coffee<br><i class="	fa fa-plus-square"></i></h1>
     <form action="add_record.php" method="post" enctype="multipart/form-data" id="add_record_form">
 
         <label id="CountryofOriginid">CoffeeID:</label>
@@ -73,7 +73,7 @@ $statement->closeCursor();
         <br>
 
         <label>&nbsp;</label>
-        <input type="submit" id="addbutton"value="Add Record">
+        <input type="submit" id="addbutton" value="Add Record">
         <br>
     </form>
 
