@@ -1,4 +1,7 @@
 <!-- the head section -->
+
+<div style="background-image: url('image_uploads/background.jpg');">
+
 <div class="container">
 <?php
 include('includes/header.php');

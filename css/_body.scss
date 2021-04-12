@@ -6,6 +6,9 @@ HERE IS WHERE THE BODY STYLING STARTS
 
 body {
     background-color: #ccc;
+    div {
+        background-image: url('image_uploads/background.jpg');
+      }
     
 }
 
@@ -37,7 +40,7 @@ a {
     font-family: 'Montez', cursive;
     color: rgb(41, 64, 124);
     font-weight: lighter;
-    font-size: xx-large;
+    font-size: 32px;
     a:hover {
         color: rgb(208, 133, 4);
     }
@@ -45,7 +48,7 @@ a {
 
 td, th {
     font-family: 'Dancing Script', cursive;
-    font-size: larger;
+    font-size: x-large;
     padding: .2em .5em .2em .5em;
     vertical-align: top;
     text-align: left;

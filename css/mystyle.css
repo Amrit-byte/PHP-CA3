@@ -7,6 +7,10 @@ body {
   background-color: #ccc;
 }
 
+body div {
+  background-image: url("image_uploads/background.jpg");
+}
+
 .container {
   /* margin-top: 0; */
   font-family: Arial, Helvetica, sans-serif;
@@ -37,7 +41,7 @@ a {
   font-family: 'Montez', cursive;
   color: #29407c;
   font-weight: lighter;
-  font-size: xx-large;
+  font-size: 32px;
 }
 
 a a:hover {
@@ -46,7 +50,7 @@ a a:hover {
 
 td, th {
   font-family: 'Dancing Script', cursive;
-  font-size: larger;
+  font-size: x-large;
   padding: .2em .5em .2em .5em;
   vertical-align: top;
   text-align: left;
@@ -85,16 +89,22 @@ header {
 
 header h1 {
   font-family: 'Orbitron', sans-serif;
+  font-size: 50px;
   margin: 0;
   padding: .5em 0;
   color: black;
   text-align: center;
 }
 
+/*
+
+HERE IS WHERE THE TOPNAVBAR STYLING STARTS
+
+*/
 /* Style the topnav navigation bar */
 .navbar {
   width: 100%;
-  background-color: #366bdf;
+  background-color: #080808;
   overflow: auto;
   /* Navbar links */
 }
@@ -159,6 +169,240 @@ HERE IS WHERE THE FORMS STYLING STARTS
 HERE IS WHERE THE VARIABLES STYLING STARTS
 
 */
+/*
+
+HERE IS WHERE THE LOGIN STYLING STARTS
+
+*/
+#email {
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#username {
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#password {
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#login-heading {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#loginbutton {
+  background-color: #a4a5a4;
+}
+
+#form {
+  text-align: center;
+}
+
+/*
+
+HERE IS WHERE THE REGISTER STYLING STARTS
+
+*/
+#email {
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#username {
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#password {
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#register-heading {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#registerbutton {
+  background-color: #a4a5a4;
+}
+
+#form {
+  text-align: center;
+}
+
+/*
+
+HERE IS WHERE THE CONTACT FORM STYLING STARTS
+
+*/
+#contactform {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+}
+
+#contact-heading {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#username {
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#phone {
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#address {
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#zip {
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#email {
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#message {
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#submitbutton {
+  background-color: #1cac1c;
+}
+
+/*
+
+HERE IS WHERE THE USER LIST STYLING STARTS
+
+*/
+#userlist-heading {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#deletebutton {
+  background-color: red;
+}
+
+/*
+
+HERE IS WHERE THE CATEGORYLIST STYLING STARTS
+
+*/
+#addcoffee-heading {
+  text-align: center;
+  font-size: x-large;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#categorylist-heading {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#deletebutton {
+  background-color: red;
+}
+
+#delete_product_form {
+  align-self: center;
+}
+
+#add_category_button {
+  background-color: greenyellow;
+  text-align: center;
+}
+
+#th {
+  font-family: 'Dancing Script', cursive;
+  font-size: x-large;
+  padding: .2em .5em .2em .5em;
+  vertical-align: top;
+  text-align: left;
+}
+
+/*
+
+HERE IS WHERE THE ADD RECORD FORM STYLING STARTS
+
+*/
+#addrecord-heading {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#CountryofOriginid {
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#name {
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#Description {
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#price {
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#addbutton {
+  background-color: #1cac1c;
+}
+
+/*
+
+HERE IS WHERE THE EDIT RECORD FORM STYLING STARTS
+
+*/
+#editrecord-heading {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#CountryofOriginid {
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#name {
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#Description {
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#price {
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#savechangesbutton {
+  background-color: #1cac1c;
+}
+
 /*
 
 HERE IS WHERE THE FONTS STYLING STARTS

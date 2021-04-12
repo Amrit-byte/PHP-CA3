@@ -41,50 +41,55 @@ $statement3->execute();
 $records = $statement3->fetchAll();
 $statement3->closeCursor();
 ?>
-<div class="container">
-    <?php
-    include('includes/header.php');
-    ?>
-    <!-- <h1>Coffee List</h1> -->
 
-    <aside>
-        <!-- display a list of categories -->
-        <h2>COFFEES</h2>
-        <nav>
-            <ul>
-                <?php foreach ($categories as $category) : ?>
-                    <li><a href=".?category_id=<?php echo $category['categoryID']; ?>">
-                            <?php echo $category['categoryName']; ?>
-                        </a>
-                    </li>
-                <?php endforeach; ?>
-            </ul>
-        </nav>
-    </aside>
 
-    <section>
-        <!-- display a table of records -->
-        <br>
-        <table>
-            <tr>
-                <th>Image</th>
-                <th>Country of Origin</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Price</th>
-            </tr>
-            <?php foreach ($records as $record) : ?>
+<div style="background-image: url('image_uploads/background.jpg');">
+
+
+    <div class="container">
+        <?php
+        include('includes/header.php');
+        ?>
+        <!-- <h1>Coffee List</h1> -->
+
+        <aside>
+            <!-- display a list of categories -->
+            <h2>COFFEES<br><i class="fa fa-coffee"></i></h2>
+            <nav>
+                <ul>
+                    <?php foreach ($categories as $category) : ?>
+                        <li><a href=".?category_id=<?php echo $category['categoryID']; ?>">
+                                <?php echo $category['categoryName']; ?>
+                            </a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+            </nav>
+        </aside>
+
+        <section>
+            <!-- display a table of records -->
+            <br>
+            <table>
                 <tr>
-                    <td><img src="image_uploads/<?php echo $record['image']; ?>" width="100px" height="100px" /></td>
-                    <td><?php echo $record['CountryofOrigin']; ?></td>
-                    <td><?php echo $record['name']; ?></td>
-                    <td><?php echo $record['Description']; ?></td>
-                    <td><?php echo $record['price']; ?></td>
+                    <th>Image <br><i class="fa fa-camera-retro"></i></th>
+                    <th>Country <i class="fa fa-globe"></i></th>
+                    <th>Name <br><i class="fa fa-coffee"></i></th>
+                    <th>Description <br><i class="fa fa-edit"></i></th>
+                    <th>Price <br><i class="fa fa-euro"></i></th>
                 </tr>
-            <?php endforeach; ?>
-        </table>
+                <?php foreach ($records as $record) : ?>
+                    <tr>
+                        <td><img src="image_uploads/<?php echo $record['image']; ?>" width="100px" height="100px" /></td>
+                        <td><?php echo $record['CountryofOrigin']; ?></td>
+                        <td><?php echo $record['name']; ?></td>
+                        <td><?php echo $record['Description']; ?></td>
+                        <td><?php echo $record['price']; ?></td>
+                    </tr>
+                <?php endforeach; ?>
+            </table>
 
-    </section>
-    <?php
-    include('includes/footer.php');
-    ?>
+        </section>
+        <?php
+        include('includes/footer.php');
+        ?>

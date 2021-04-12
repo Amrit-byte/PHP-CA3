@@ -71,27 +71,30 @@ if (isset($_POST['login'])) {
 }
 
 ?>
+
+<div style="background-image: url('image_uploads/background.jpg');">
+
 <div class="container">
     <?php
     include('includes/header.php');
     ?>
-    <h1>Login</h1>
-    <form action="login.php" method="post">
+    <h1 id="login-heading">Login</h1>
+    <form action="login.php" id="form"method="post">
 
-        <label for="email">Email</label>
-        <input type="text" id="email" name="email" required placeholder="example@gmail.com" class="text-input" size="50" onBlur="email_validation();" /><span id="email_err"></span>
+        <label for="email" id="email">Email: </label>
+        <input type="text" id="email" name="email" required placeholder="simonclarke@gmail.com" class="text-input" size="22" onBlur="email_validation();" /><span id="email_err"></span>
         <br>
 
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" required placeholder="Simon Clarke" size="50" onBlur="username_validation();" /><span id="name_err"></span>
+        <label for="username" id="username">Username: </label>
+        <input type="text" id="username" name="username" required placeholder="Simon Clarke" size="20" onBlur="username_validation();" /><span id="name_err"></span>
         <br>
 
-        <label for="password">Password</label>
-        <input type="text" id="password" name="password" required placeholder="Simonclarke123" size="12" onBlur="password_validation();" /><span id="password_err"></span>
+        <label for="password" id="password">Password: </label>
+        <input type="text" id="password" name="password" required placeholder="Simonclarke123" size="20" onBlur="password_validation();" /><span id="password_err"></span>
         <br>
 
-        <input type="submit" name="login" value="Login">
+        <input type="submit" name="login" id="loginbutton" value="Login">
     </form>
     <?php
-    include('includes/footer.php');
+    //include('includes/footer.php');
     ?>

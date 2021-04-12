@@ -26,12 +26,15 @@ $categories = $statement->fetchAll();
 $statement->closeCursor();
 ?>
 <!-- the head section -->
+
+<div style="background-image: url('image_uploads/background.jpg');">
+
 <div class="container">
     <?php
     include('includes/header.php');
     ?>
-    <h1>Coffee List</h1>
-    <table>
+    <h1 id="categorylist-heading">Coffee List</h1>
+    <table id="table">
         <tr>
             <th>Name</th>
             <th>&nbsp;</th>
@@ -42,7 +45,7 @@ $statement->closeCursor();
                 <td>
                     <form action="delete_category.php" method="post" id="delete_product_form">
                         <input type="hidden" name="category_id" value="<?php echo $category['categoryID']; ?>">
-                        <input type="submit" value="Delete">
+                        <input type="submit" id ="deletebutton"value="Delete">
                     </form>
                 </td>
             </tr>
@@ -50,10 +53,10 @@ $statement->closeCursor();
     </table>
     <br>
 
-    <h2>Add Coffee</h2>
+    <h2 id="addcoffee-heading">Add Coffee</h2>
     <form action="add_category.php" method="post" id="add_category_form">
 
-        <label>Name:</label>
+        <label id="th">Name:</label>
         <input type="input" name="name">
         <input id="add_category_button" type="submit" value="Add">
     </form>

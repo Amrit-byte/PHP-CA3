@@ -26,11 +26,14 @@ $user = $statement->fetchAll();
 $statement->closeCursor();
 ?>
 <!-- the head section -->
+
+<div style="background-image: url('image_uploads/background.jpg');">
+
 <div class="container">
     <?php
     include('includes/header.php');
     ?>
-    <h1>Users List</h1>
+    <h1 id="userlist-heading">Users List</h1>
     <table>
         <tr>
             <th>Name</th>
@@ -42,7 +45,7 @@ $statement->closeCursor();
                 <td>
                     <form action="delete_user.php" method="post" id="delete_product_form">
                         <input type="hidden" name="user_id" value="<?php echo $category['id']; ?>">
-                        <input type="submit" value="Delete">
+                        <input type="submit" id="deletebutton" value="Delete">
                     </form>
                 </td>
             </tr>

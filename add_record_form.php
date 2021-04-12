@@ -31,15 +31,19 @@ $categories = $statement->fetchAll();
 $statement->closeCursor();
 ?>
 <!-- the head section -->
+
+<div style="background-image: url('image_uploads/background.jpg');">
+
+
 <div class="container">
     <?php
     include('includes/header.php');
     ?>
-    <h1>Add New Coffee</h1>
+    <h1 id="addrecord-heading">Add New Coffee</h1>
     <form action="add_record.php" method="post" enctype="multipart/form-data" id="add_record_form">
 
-        <label>Coffee</label>
-        <select name="category_id">
+        <label id="CountryofOriginid">CoffeeID:</label>
+        <select id="CountryofOriginid" name="category_id">
             <?php foreach ($categories as $category) : ?>
                 <option value="<?php echo $category['categoryID']; ?>">
                     <?php echo $category['categoryName']; ?>
@@ -48,28 +52,28 @@ $statement->closeCursor();
         </select>
         <br>
 
-        <label>Origin:</label>
-        <input type="input" name="CountryofOrigin" placeholder="Name of Country" id="CountryofOriginid" size="12" onBlur="CountryofOrigin_validation();" /><span id="CountryofOriginid_err"></span>
+        <label id="CountryofOriginid">Origin:</label>
+        <input type="input" name="CountryofOrigin" placeholder="Name of Country" id="CountryofOriginid" size="50" onBlur="CountryofOrigin_validation();" /><span id="CountryofOriginid_err"></span>
         <br>
 
-        <label>Name:</label>
+        <label id="name">Name:</label>
         <input type="input" name="name" required placeholder="English Name (coffee)" id="name" size="50" onBlur="name_validation();" /><span id="name_err"></span>
         <br>
 
-        <label>Description:</label>
-        <input type="input" name="Description" placeholder="Min 2 words required">
+        <label id="Description">Description:</label>
+        <input type="input" name="Description" id="Description" size="50" placeholder="Min 2 words required">
         <br>
 
-        <label>Price:</label>
-        <input type="input" name="price" required placeholder="Decimals with 2 places">
+        <label id="price">Price:</label>
+        <input type="input" name="price" id="price" size="50" required placeholder="Decimals with 2 places">
         <br>
 
-        <label>Image:</label>
-        <input type="file" name="image" accept="image/*" />
+        <label id="price">Image:</label>
+        <input type="file" id="price" name="image" accept="image/*" />
         <br>
 
         <label>&nbsp;</label>
-        <input type="submit" value="Add Record">
+        <input type="submit" id="addbutton"value="Add Record">
         <br>
     </form>
 

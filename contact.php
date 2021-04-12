@@ -1,42 +1,47 @@
 <!-- the head section -->
+
+<div style="background-image: url('image_uploads/background.jpg');">
+
 <div class="container">
     <?php
     include('includes/header.php');
     ?>
 
-    <h1>Contact us</h1>
-    <form method="POST" name="contactform" action="contact-form-handler.php">
+    <h1 id="contact-heading">Contact us</h1>
+    <form method="POST" name="contactform" id="contactform" action="contact-form-handler.php">
         <p>
-            <label for="username">Name:</label><br>
-            <input type="text" name="username" id="username" placeholder="Your Name" class="text-input" size="25" onBlur="username_validation();" /><span id="name_err"></span>
+            <label for="username" id="username">Name:</label><br>
+            <input type="text" name="username" id="username" required placeholder="Your Name" class="text-input" size="50" onBlur="username_validation();" /><span id="name_err"></span>
         </p>
 
         <p>
-            <label for='phone'>Phone Number:</label> <br>
-            <input type="numbers" name="phone" required placeholder="+353 Not Required">
+            <label for='phone' id="phone">Phone Number:</label><br>
+            <input type="numbers" name="phone" id="phone" required placeholder="+353 Not Required" class="text-input" size="50">
         </p>
 
         <p>
-            <label for='address'>Address:</label> <br>
-            <textarea name="address" placeholder="32 cream house , db road , newry"></textarea>
+            <label for='address' id="address">Address:</label><br>
+            <!-- <textarea name="address" placeholder="32 cream house , db road , newry" size="50"></textarea> -->
+            <input type="text" name="address" id="address" placeholder="32 cream house , db road , newry" class="text-input" size="50">
         </p>
 
         <p>
-            <label for='zip'>ZIP Code:</label> <br>
-            <input type="numbers" name="zip" id="zip" required placeholder="A91 YH05">
+            <label for='zip' id="zip">ZIP Code:</label> <br>
+            <input type="numbers" name="zip" id="zip" required placeholder="A91 YH05" size="50">
         </p>
 
 
         <p>
-            <label for='email'>Email Address:</label> <br>
+            <label for='email' id="email">Email Address:</label> <br>
             <input type="text" name="email" id="email" required placeholder="Gmail, Yahoo, Hotmail" class="text-input" size="50" onBlur="email_validation();" /><span id="email_err"></span>
             <br>
         </p>
         <p>
-            <label for='message'>Message:</label> <br>
-            <textarea name="message" placeholder="Please Enter Atleast 2 Words"></textarea>
+            <label for='message' id="message">Message:</label> <br>
+            <!-- <textarea name="message" size="50" placeholder="Please Enter Atleast 2 Words"></textarea> -->
+            <input type="text" name="message" id="message" placeholder="Please Enter Atleast 2 Words" class="text-input" size="50">
         </p>
-        <input type="submit" value="Submit"><br>
+        <input type="submit" id="submitbutton"value="Submit"><br>
     </form>
 
     <script language="JavaScript">

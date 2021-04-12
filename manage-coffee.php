@@ -65,65 +65,67 @@ $statement3->closeCursor();
 ?>
 
 
-<div class="container">
-    <?php
-    include('includes/header.php');
-    ?>
-    <!-- <h1>Coffee List</h1> -->
+<div style="background-image: url('image_uploads/background.jpg');">
 
-    <aside>
-        <!-- display a list of categories -->
-        <h2>COFFEES</h2>
-        <nav>
-            <ul>
-                <?php foreach ($categories as $category) : ?>
-                    <li><a href=".?category_id=<?php echo $category['categoryID']; ?>">
-                            <?php echo $category['categoryName']; ?>
-                        </a>
-                    </li>
-                <?php endforeach; ?>
-            </ul>
-        </nav>
-    </aside>
+    <div class="container">
+        <?php
+        include('includes/header.php');
+        ?>
+        <!-- <h1>Coffee List</h1> -->
 
-    <section>
-        <!-- display a table of records -->
-        <h2><?php echo $category_name; ?></h2>
-        <table>
-            <tr>
-                <th>Image</th>
-                <th>Country of Origin</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Price</th>
-                <th>Delete</th>
-                <th>Edit</th>
-            </tr>
-            <?php foreach ($records as $record) : ?>
+        <aside>
+            <!-- display a list of categories -->
+            <h2>COFFEES<br><i class="fa fa-coffee"></i></h2>
+            <nav>
+                <ul>
+                    <?php foreach ($categories as $category) : ?>
+                        <li><a href=".?category_id=<?php echo $category['categoryID']; ?>">
+                                <?php echo $category['categoryName']; ?>
+                            </a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+            </nav>
+        </aside>
+
+        <section>
+            <!-- display a table of records -->
+            <h2><?php echo $category_name; ?></h2>
+            <table>
                 <tr>
-                    <td><img src="image_uploads/<?php echo $record['image']; ?>" width="100px" height="100px" /></td>
-                    <td><?php echo $record['CountryofOrigin']; ?></td>
-                    <td><?php echo $record['name']; ?></td>
-                    <td><?php echo $record['Description']; ?></td>
-                    <td><?php echo $record['price']; ?></td>
-                    <td>
-                        <form action="delete_record.php" method="post" id="delete_record_form">
-                            <input type="hidden" name="record_id" value="<?php echo $record['recordID']; ?>">
-                            <input type="hidden" name="category_id" value="<?php echo $record['categoryID']; ?>">
-                            <input type="submit" value="Delete">
-                        </form>
-                    </td>
-                    <td>
-                        <form action="edit_record_form.php" method="post" id="delete_record_form">
-                            <input type="hidden" name="record_id" value="<?php echo $record['recordID']; ?>">
-                            <input type="hidden" name="category_id" value="<?php echo $record['categoryID']; ?>">
-                            <input type="submit" value="Edit">
-                        </form>
-                    </td>
+                    <th>Image <br><i class="fa fa-camera-retro"></i></th>
+                    <th>Country <i class="fa fa-globe"></i></th>
+                    <th>Name <br><i class="fa fa-coffee"></i></th>
+                    <th>Description <br><i class="fa fa-edit"></i></th>
+                    <th>Price <br><i class="fa fa-euro"></i></th>
+                    <th>Delete<br><i class="fa fa-recycle"></i></th>
+                    <th>Edit <br><i class="fa fa-edit"></i></th>
                 </tr>
-            <?php endforeach; ?>
-        </table>
-    </section>
-    <?php
-    include('includes/footer.php');
-    ?>
+                <?php foreach ($records as $record) : ?>
+                    <tr>
+                        <td><img src="image_uploads/<?php echo $record['image']; ?>" width="100px" height="100px" /></td>
+                        <td><?php echo $record['CountryofOrigin']; ?></td>
+                        <td><?php echo $record['name']; ?></td>
+                        <td><?php echo $record['Description']; ?></td>
+                        <td><?php echo $record['price']; ?></td>
+                        <td>
+                            <form action="delete_record.php" method="post" id="delete_record_form">
+                                <input type="hidden" name="record_id" value="<?php echo $record['recordID']; ?>">
+                                <input type="hidden" name="category_id" value="<?php echo $record['categoryID']; ?>">
+                                <input type="submit" value="Delete">
+                            </form>
+                        </td>
+                        <td>
+                            <form action="edit_record_form.php" method="post" id="delete_record_form">
+                                <input type="hidden" name="record_id" value="<?php echo $record['recordID']; ?>">
+                                <input type="hidden" name="category_id" value="<?php echo $record['categoryID']; ?>">
+                                <input type="submit" value="Edit">
+                            </form>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </table>
+        </section>
+        <?php
+        include('includes/footer.php');
+        ?>
