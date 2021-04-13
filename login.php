@@ -46,7 +46,10 @@ if (isset($_POST['login'])) {
         //Could not find a user with that username!
         //PS: You might want to handle this error in a more user-friendly manner!
         die('Incorrect username / password combination!');
-    } else {
+    } else
+    // if($user==='admin')
+
+    {
         //User account found. Check to see if the given password matches the
         //password hash that we stored in our users table.
 
@@ -58,6 +61,9 @@ if (isset($_POST['login'])) {
 
             //Provide the user with a login session.
             $_SESSION['user_id'] = $user['id'];
+
+            // $_SESSION['admin'] = $user['id'];
+
             $_SESSION['logged_in'] = time();
 
             //Redirect to our protected page, which we called home.php
@@ -74,27 +80,27 @@ if (isset($_POST['login'])) {
 
 <div style="background-image: url('image_uploads/background.jpg');">
 
-<div class="container">
-    <?php
-    include('includes/header.php');
-    ?>
-    <h1 id="login-heading">Login</h1>
-    <form action="login.php" id="form"method="post">
+    <div class="container">
+        <?php
+        include('includes/header.php');
+        ?>
+        <h1 id="login-heading">Login</h1>
+        <form action="login.php" id="form" method="post">
 
-        <label for="email" id="email">Email: </label>
-        <input type="text" id="email" name="email" required placeholder="simonclarke@gmail.com" class="text-input" size="22" onBlur="email_validation();" /><span id="email_err"></span>
-        <br>
+            <label for="email" id="email">Email: </label>
+            <input type="text" id="email" name="email" required placeholder="simonclarke@gmail.com" class="text-input" size="22" onBlur="email_validation();" /><span id="email_err"></span>
+            <br>
 
-        <label for="username" id="username">Username: </label>
-        <input type="text" id="username" name="username" required placeholder="Simon Clarke" size="20" onBlur="username_validation();" /><span id="name_err"></span>
-        <br>
+            <label for="username" id="username">Username: </label>
+            <input type="text" id="username" name="username" required placeholder="Simon Clarke" size="20" onBlur="username_validation();" /><span id="name_err"></span>
+            <br>
 
-        <label for="password" id="password">Password: </label>
-        <input type="text" id="password" name="password" required placeholder="Simonclarke123" size="20" onBlur="password_validation();" /><span id="password_err"></span>
-        <br>
+            <label for="password" id="password">Password: </label>
+            <input type="text" id="password" name="password" required placeholder="Simonclarke123" size="20" onBlur="password_validation();" /><span id="password_err"></span>
+            <br>
 
-        <input type="submit" name="login" id="loginbutton" value="Login">
-    </form>
-    <?php
-    //include('includes/footer.php');
-    ?>
+            <input type="submit" name="login" id="loginbutton" value="Login">
+        </form>
+        <?php
+        //include('includes/footer.php');
+        ?>
