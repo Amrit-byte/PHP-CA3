@@ -20,12 +20,12 @@ $email_address = $_POST['email'];
 $message = $_POST['message'];
 
 
-if (!preg_match(
-	"/^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$/i",
-	$name
-)) {
-	$errors .= "\n Error: Invalid Name";
-}
+// if (!preg_match(
+// 	"/^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$/i",
+// 	$name
+// )) {
+// 	$errors .= "\n Error: Invalid Name";
+// }
 
 if (!preg_match(
 	"/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i",

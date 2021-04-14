@@ -343,10 +343,6 @@ HERE IS WHERE THE USER LIST STYLING STARTS
   font-family: 'Orbitron', sans-serif;
 }
 
-#deletebutton {
-  background-color: red;
-}
-
 /*
 
 HERE IS WHERE THE CATEGORYLIST STYLING STARTS
@@ -363,17 +359,8 @@ HERE IS WHERE THE CATEGORYLIST STYLING STARTS
   font-family: 'Orbitron', sans-serif;
 }
 
-#deletebutton {
-  background-color: red;
-}
-
 #delete_product_form {
   align-self: center;
-}
-
-#add_category_button {
-  background-color: greenyellow;
-  text-align: center;
 }
 
 #th {

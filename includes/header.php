@@ -28,13 +28,7 @@
             <a href="manage-coffee.php"><i class="fa fa-file-text"></i> Edit/Delete Coffee</a>
             <a href="category_list.php"><i class="fa fa-file-text"></i> Manage Coffee</a>
             <a href="Users_list.php"><i class="fa fa-male"></i> Manage Users</a>
-
-            <a href="youtube.php"><i class="fa fa-youtube-play"></i> StrewTube</a>
             <a href="payment.php"><i class="fa fa-cc-paypal"></i> Pay</a>
-            <a href="facebook.php"><i class="fa fa-facebook"></i> Facebook</a>
-            <a href="facebook.php"><i class="fa fa-instagram"></i> Instagram</a>
-            <a href="facebook.php"><i class="fa fa-linkedin"></i> Linkedin</a>
-
             <a href="contact.php"><i class="fa fa-address-card-o"></i> Contact</a>
             <a href="register.php"><i class="fa fa-fw fa-user"></i> Register</a>
             <a href="login.php"><i class="fa fa-fw fa-user"></i> Login</a>
