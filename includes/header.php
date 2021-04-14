@@ -18,8 +18,7 @@
         <h1>STREW COFFEE SHOP</h1>
         <div class="navbar">
             <a class="active" href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
-            <a href="add_record_form.php"><i class="fa fa-refresh"></i> Add Coffee</a>
-            <a href="manage-coffee.php"><i class="fa fa-file-text"></i> Edit/Delete Coffee</a>
+            <a href="manage-coffee.php"><i class="fa fa-reorder"></i> Add/Edit/Delete Coffee</a>
             <a href="category_list.php"><i class="fa fa-file-text"></i> Manage Category List</a>
             <a href="Users_list.php"><i class="fa fa-male"></i> Manage Users List</a>
             <a href="payment.php"><i class="fa fa-cc-paypal"></i> Pay</a>

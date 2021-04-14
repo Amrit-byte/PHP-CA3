@@ -14,20 +14,21 @@ session_start();
 //     exit;
 
 // }
-    if (!isset($_SESSION['user_id']) || $_SESSION['user_id'] != 37 || !isset($_SESSION['logged_in'])) {
-        //User not logged in. Redirect them back to the login.php page.
+if (!isset($_SESSION['user_id']) || $_SESSION['user_id'] != 37 || !isset($_SESSION['logged_in'])) {
+    //User not logged in. Redirect them back to the login.php page.
     header('Location: login.php');
-        echo 'Sorry No Access unless Admin';
-        exit;
-    } else {
-        echo 'Hello Admin !';
-    }
+    echo 'Sorry No Access unless Admin';
+    exit;
+} else {
+    echo 'Hello Admin  !   '; 
+}
+
 
 /**
  * Print out something that only logged in users can see.
  */
 
-echo 'Congratulations! You are logged in!';
+echo ' Congratulations ! You are logged in !   ';
 
 require_once('database.php');
 
@@ -106,8 +107,10 @@ $statement3->closeCursor();
                     <th>Name <br><i class="fa fa-coffee"></i></th>
                     <th>Description <br><i class="fa fa-edit"></i></th>
                     <th>Price <br><i class="fa fa-euro"></i></th>
-                    <th>Delete<br><i class="fa fa-recycle"></i></th>
+                    <th>Add <br><i class="fa fa-plus-square"></i></th>
                     <th>Edit <br><i class="fa fa-edit"></i></th>
+                    <th>Delete<br><i class="fa fa-recycle"></i></th>
+                    
                 </tr>
                 <?php foreach ($records as $record) : ?>
                     <tr>
@@ -117,10 +120,10 @@ $statement3->closeCursor();
                         <td><?php echo $record['Description']; ?></td>
                         <td><?php echo $record['price']; ?></td>
                         <td>
-                            <form action="delete_record.php" method="post" id="delete_record_form">
+                            <form action="add_record_form.php" method="post" id="delete_record_form">
                                 <input type="hidden" name="record_id" value="<?php echo $record['recordID']; ?>">
                                 <input type="hidden" name="category_id" value="<?php echo $record['categoryID']; ?>">
-                                <input type="submit" value="Delete">
+                                <input type="submit" value="Add">
                             </form>
                         </td>
                         <td>
@@ -128,6 +131,13 @@ $statement3->closeCursor();
                                 <input type="hidden" name="record_id" value="<?php echo $record['recordID']; ?>">
                                 <input type="hidden" name="category_id" value="<?php echo $record['categoryID']; ?>">
                                 <input type="submit" value="Edit">
+                            </form>
+                        </td>
+                        <td>
+                            <form action="delete_record.php" method="post" id="delete_record_form">
+                                <input type="hidden" name="record_id" value="<?php echo $record['recordID']; ?>">
+                                <input type="hidden" name="category_id" value="<?php echo $record['categoryID']; ?>">
+                                <input type="submit" value="Delete">
                             </form>
                         </td>
                     </tr>
