@@ -45,7 +45,7 @@
         </form>
 
         <script language="JavaScript">
-            var frmvalidator = new Validator("Payment");
+            var frmvalidator = new Validator("pay");
             frmvalidator.addValidation("cardnumber", "req", "Please provide your cardnumber");
             frmvalidator.addValidation("expirydate", "req", "Please provide your expirydate");
             frmvalidator.addValidation("name", "req", "Please provide your name");

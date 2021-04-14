@@ -47,7 +47,7 @@ if (isset($_POST['login'])) {
         //PS: You might want to handle this error in a more user-friendly manner!
         die('Incorrect username / password combination!');
     } else
-    // if($user==='admin')
+    // if($user['username']=='admin')
 
     {
         //User account found. Check to see if the given password matches the

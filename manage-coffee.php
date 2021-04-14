@@ -8,7 +8,7 @@ session_start();
 /**
  * Check if the user is logged in.
  */                   //admin
-if (!isset($_SESSION['user_id']) || !isset($_SESSION['logged_in'])) {
+if (isset($_SESSION['user_id']) && $_SESSION['user_id']!=37) {
     //User not logged in. Redirect them back to the login.php page.
     header('Location: login.php');
     exit;
@@ -79,7 +79,7 @@ $statement3->closeCursor();
             <nav>
                 <ul>
                     <?php foreach ($categories as $category) : ?>
-                        <li><a href=".?category_id=<?php echo $category['categoryID']; ?>">
+                        <li><a href="manage-coffee.php?category_id=<?php echo $category['categoryID']; ?>">
                                 <?php echo $category['categoryName']; ?>
                             </a>
                         </li>
