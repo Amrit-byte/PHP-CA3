@@ -79,24 +79,24 @@ if (isset($_POST['register'])) {
 
 <div style="background-image: url('image_uploads/background.jpg');">
 
-<div class="container">
-    <?php
-    include('includes/header.php');
-    ?>
-    <h1 id="register-heading">Register</h1>
-    <form action="register.php" id="form" method="post">
+    <div class="container">
+        <?php
+        include('includes/header.php');
+        ?>
+        <h1>Register</h1>
+        <form action="register.php" id="add_record_form" method="post">
 
-        <label for="email" id="email">Email</label>
-        <input type="text" name="email" id="email" required placeholder="emilyforest@gmail.com" class="text-input" size="22" onBlur="email_validation();" /><span id="email_err"></span>
-        <br>
-        <label for="username" id="username">User Name:</label>
-        <input type="text" name="username" id="username" required placeholder="Emily Forest" size="20" onBlur="username_validation();" /><span id="name_err"></span>
-        <br>
-        <label for="password" id="password">Password:</label>
-        <input type="password" name="password" id="password" required placeholder="Emilyforest123" size="20" onBlur="password_validation();" /><span id="password_err"></span>
-        <br>
-        <input type="submit" name="register" id="registerbutton" value="Register"></button>
-    </form>
-    <?php
-    include('includes/footer.php');
-    ?>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" required placeholder="emilyforest@gmail.com" class="text-input" onBlur="email_validation();" /><span id="email_err"></span>
+            <br>
+            <label for="username">User Name:</label>
+            <input type="text" name="username" id="username" required placeholder="Emily Forest" class="text-input" onBlur="username_validation();" /><span id="name_err"></span>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required placeholder="Emilyforest123" class="text-input" onBlur="password_validation();" /><span id="password_err"></span>
+            <br>
+            <input type="submit" name="register" value="Register"></button>
+        </form>
+        <?php
+        include('includes/footer.php');
+        ?>

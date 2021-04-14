@@ -8,6 +8,10 @@ if (!isset($_SESSION['user_id']) || !isset($_SESSION['logged_in'])) {
     header('Location: login.php');
     exit;
 }
+
+
+
+
 /*
  * Print out something that only logged in users can see.
  */

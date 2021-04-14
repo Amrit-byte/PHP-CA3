@@ -1,17 +1,17 @@
 //CountryofOrigin validation starts
 function CountryofOrigin_validation() {
     'use strict';
-    var CountryofOriginid_name = document.getElementById("CountryofOriginid");
-    var CountryofOriginid_value = document.getElementById("CountryofOriginid").value;
-    var CountryofOriginid_length = CountryofOriginid_value.length;
-    if (CountryofOriginid_length < 4 || CountryofOriginid_length > 122) {
-        document.getElementById('CountryofOriginid_err').innerHTML = 'Country name must not be less than 4 characters';
+    var CountryofOrigin_name = document.getElementById("CountryofOrigin");
+    var CountryofOrigin_value = document.getElementById("CountryofOrigin").value;
+    var CountryofOrigin_length = CountryofOrigin_value.length;
+    if (CountryofOrigin_length < 4 || CountryofOrigin_length > 122) {
+        document.getElementById('CountryofOrigin_err').innerHTML = 'Country name must not be less than 4 characters';
         CountryofOriginid_name.focus();
-        document.getElementById('CountryofOriginid_err').style.color = "#FF0000";
+        document.getElementById('CountryofOrigin_err').style.color = "#FF0000";
     }
     else {
-        document.getElementById('CountryofOriginid_err').innerHTML = 'Valid Country Name';
-        document.getElementById('CountryofOriginid_err').style.color = "#00AF33";
+        document.getElementById('CountryofOrigin_err').innerHTML = 'Valid Country Name';
+        document.getElementById('CountryofOrigin_err').style.color = "#00AF33";
     }
 }
 //CountryofOrigin validation ends

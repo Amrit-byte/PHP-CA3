@@ -6,14 +6,22 @@
 session_start();
 
 /**
- * Check if the user is logged in.
- */                   //admin
-if (isset($_SESSION['user_id']) && $_SESSION['user_id']!=37) {
-    //User not logged in. Redirect them back to the login.php page.
-    header('Location: login.php');
-    exit;
-}
+ * Check if the user is admin logged in.
+ */
+// if (isset($_SESSION['user_id']) && $_SESSION['user_id'] != 37) {
+//     //User not logged in. Redirect them back to the login.php page.
+//     header('Location: login.php');
+//     exit;
 
+// }
+    if (!isset($_SESSION['user_id']) || $_SESSION['user_id'] != 37 || !isset($_SESSION['logged_in'])) {
+        //User not logged in. Redirect them back to the login.php page.
+    header('Location: login.php');
+        echo 'Sorry No Access unless Admin';
+        exit;
+    } else {
+        echo 'Hello Admin !';
+    }
 
 /**
  * Print out something that only logged in users can see.

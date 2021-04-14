@@ -84,22 +84,22 @@ if (isset($_POST['login'])) {
         <?php
         include('includes/header.php');
         ?>
-        <h1 id="login-heading">Login</h1>
-        <form action="login.php" id="form" method="post">
+        <h1>Login</h1>
+        <form action="login.php" id="add_record_form" method="post">
 
-            <label for="email" id="email">Email: </label>
-            <input type="text" id="email" name="email" required placeholder="simonclarke@gmail.com" class="text-input" size="22" onBlur="email_validation();" /><span id="email_err"></span>
+            <label for="email">Email: </label>
+            <input type="text" name="email" id="email" required placeholder="simonclarke@gmail.com" class="text-input" onBlur="email_validation();" /><span id="email_err"></span>
             <br>
 
-            <label for="username" id="username">Username: </label>
-            <input type="text" id="username" name="username" required placeholder="Simon Clarke" size="20" onBlur="username_validation();" /><span id="name_err"></span>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required placeholder="Simon Clarke" class="text-input" onBlur="username_validation();" /><span id="name_err"></span>
             <br>
 
-            <label for="password" id="password">Password: </label>
-            <input type="text" id="password" name="password" required placeholder="Simonclarke123" size="20" onBlur="password_validation();" /><span id="password_err"></span>
+            <label for="password">Password: </label>
+            <input type="text" name="password" id="password" required placeholder="Simonclarke123" class="text-input" onBlur="password_validation();" /><span id="password_err"></span>
             <br>
 
-            <input type="submit" name="login" id="loginbutton" value="Login">
+            <input type="submit" name="login" value="Login">
         </form>
         <?php
         //include('includes/footer.php');
