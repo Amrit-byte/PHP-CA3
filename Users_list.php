@@ -34,7 +34,7 @@ $statement->closeCursor();
     include('includes/header.php');
     ?>
     <h1 id="userlist-heading">Users List</h1>
-    <table>
+    <table id="table">
         <tr>
             <th>Name</th>
             <th>&nbsp;</th>

@@ -4,11 +4,12 @@ HERE IS WHERE THE BODY STYLING STARTS
 
 */
 body {
-  background-color: #ccc;
-}
-
-body div {
   background-image: url("image_uploads/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 500px;
+  background-position: center;
+  background-size: cover;
 }
 
 .container {
@@ -17,7 +18,6 @@ body div {
   width: 1000px;
   margin: 0 auto;
   background-color: white;
-  border-radius: 5%;
   padding: .5em 2em;
 }
 
@@ -28,10 +28,13 @@ section {
 }
 
 .loginmessage {
-  background-color: green;
-  padding: 5px;
+  background-color: #4CAF50;
+  padding: 10px;
   color: white;
   margin-bottom: 20px;
+  margin-right: 130px;
+  margin-left: 130px;
+  text-align: center;
 }
 
 ul {
@@ -55,14 +58,6 @@ a a:hover {
   color: #d08504;
 }
 
-td, th {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: medium;
-  padding: .2em .5em .2em .5em;
-  vertical-align: top;
-  text-align: left;
-}
-
 form {
   margin: 0;
 }
@@ -82,6 +77,33 @@ br {
 
 .margin_top_increase {
   margin-top: 1em;
+}
+
+#table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#table td, #table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#table tr:hover {
+  background-color: #ddd;
+}
+
+#table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
 }
 
 /*

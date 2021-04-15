@@ -45,8 +45,8 @@ $statement3->closeCursor();
 
 <div style="background-image: url('image_uploads/background.jpg');">
 
-
     <div class="container">
+
         <?php
         include('includes/header.php');
         ?>
@@ -70,7 +70,7 @@ $statement3->closeCursor();
         <section>
             <!-- display a table of records -->
             <br>
-            <table>
+            <table id="table">
                 <tr>
                     <th>Image <br><i class="fa fa-camera-retro"></i></th>
                     <th>Country <i class="fa fa-globe"></i></th>

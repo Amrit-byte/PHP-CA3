@@ -98,7 +98,7 @@ $statement3->closeCursor();
             </div>
 
 
-            <table>
+            <table id="table">
                 <tr>
                     <th>Image <br><i class="fa fa-camera-retro"></i></th>
                     <th>Country <i class="fa fa-globe"></i></th>
