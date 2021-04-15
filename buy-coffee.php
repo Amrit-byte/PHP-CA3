@@ -74,7 +74,7 @@ $statement3->closeCursor();
 
         <section>
             <!-- display a table of records -->
-            <h2><?php echo $category_name; ?></h2>
+            <!-- <h2><?php echo $category_name; ?></h2> -->
 
             <div class="loginmessage">
                 <?php
@@ -100,7 +100,7 @@ $statement3->closeCursor();
                     <th>Name <br><i class="fa fa-coffee"></i></th>
                     <th>Description <br><i class="fa fa-edit"></i></th>
                     <th>Price <br><i class="fa fa-euro"></i></th>
-                    <th>Buy <br><i class="fa fa-plus-square"></i></th>
+                    <th>Buy <br><i class="fa fa-cart-plus"></i></th>
 
 
                 </tr>

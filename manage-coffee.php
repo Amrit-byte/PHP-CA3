@@ -74,7 +74,7 @@ $statement3->closeCursor();
 
         <section>
             <!-- display a table of records -->
-            <h2><?php echo $category_name; ?></h2>
+            <!-- <h2><?php echo $category_name; ?></h2> -->
 
             <div class="loginmessage">
                 <?php
@@ -103,11 +103,11 @@ $statement3->closeCursor();
                     <th>Image <br><i class="fa fa-camera-retro"></i></th>
                     <th>Country <i class="fa fa-globe"></i></th>
                     <th>Name <br><i class="fa fa-coffee"></i></th>
-                    <th>Description <br><i class="fa fa-edit"></i></th>
+                    <th>Description <br><i class="fa fa-pencil"></i></th>
                     <th>Price <br><i class="fa fa-euro"></i></th>
                     <th>Add <br><i class="fa fa-plus-square"></i></th>
                     <th>Edit <br><i class="fa fa-edit"></i></th>
-                    <th>Delete<br><i class="fa fa-recycle"></i></th>
+                    <th>Delete<br><i class="fa fa-trash-o"></i></th>
 
                 </tr>
                 <?php foreach ($records as $record) : ?>

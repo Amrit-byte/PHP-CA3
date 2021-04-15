@@ -75,7 +75,7 @@ $statement3->closeCursor();
                     <th>Image <br><i class="fa fa-camera-retro"></i></th>
                     <th>Country <i class="fa fa-globe"></i></th>
                     <th>Name <br><i class="fa fa-coffee"></i></th>
-                    <th>Description <br><i class="fa fa-edit"></i></th>
+                    <th>Description <br><i class="fa fa-pencil"></i></th>
                     <th>Price <br><i class="fa fa-euro"></i></th>
                 </tr>
                 <?php foreach ($records as $record) : ?>
