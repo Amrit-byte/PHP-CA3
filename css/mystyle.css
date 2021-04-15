@@ -95,8 +95,8 @@ header {
 }
 
 header h1 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 50px;
+  font-family: 'Lobster Two', cursive;
+  font-size: 60px;
   margin: 0;
   padding: .5em 0;
   color: black;
@@ -105,35 +105,86 @@ header h1 {
 
 /*
 
-HERE IS WHERE THE TOPNAVBAR STYLING STARTS
+HERE IS WHERE THE NAVBAR STYLING STARTS
 
 */
 /* Style the topnav navigation bar */
 .navbar {
   width: 100%;
-  background-color: #080808;
-  overflow: auto;
-  /* Navbar links */
+  display: inline-block;
 }
 
-.navbar a {
-  float: left;
-  text-align: center;
-  padding: 12px;
-  color: lavenderblush;
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .useraccess a {
+    float: right;
+    display: block;
+  }
+}
+
+/*
+
+HERE IS WHERE THE USER ACCESS STYLING STARTS
+
+*/
+.useraccess {
+  float: right;
+}
+
+.useraccess a {
+  text-align: right;
+  margin: 0;
+  padding: .5em 0;
+  display: inline-flex;
+  color: black;
   text-decoration: none;
   font-size: 150%;
   /* Navbar links on mouse-over */
 }
 
-.navbar a a:hover {
+.useraccess a a:hover {
   background-color: #000;
 }
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
 @media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
+  .useraccess a {
+    float: right;
+    display: block;
+  }
+}
+
+/*
+
+HERE IS WHERE THE ADMIN ACCESS STYLING STARTS
+
+*/
+/* Style the topnav navigation bar */
+.adminaccess {
+  width: 100%;
+  overflow: auto;
+  /* Navbar links */
+}
+
+.adminaccess a {
+  float: left;
+  text-align: left;
+  margin: 0;
+  padding: .5em 0;
+  color: black;
+  text-decoration: none;
+  font-size: 150%;
+  /* Navbar links on mouse-over */
+}
+
+.adminaccess a a:hover {
+  background-color: #000;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .adminaccess a {
+    float: left;
     display: block;
   }
 }

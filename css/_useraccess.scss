@@ -1,0 +1,34 @@
+/*
+
+HERE IS WHERE THE USER ACCESS STYLING STARTS
+
+*/
+
+
+.useraccess {
+     float:right;
+    a {
+      text-align: right;
+      margin: 0;
+      padding: .5em 0;
+      display:inline-flex;
+      color: black;
+      text-decoration: none;
+      font-size:150%;
+
+       /* Navbar links on mouse-over */
+      a:hover {
+        background-color: #000;
+      }
+
+    }
+
+  }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .useraccess a {
+      float: right;
+      display: block;
+    }
+  }

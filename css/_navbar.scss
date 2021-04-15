@@ -1,0 +1,20 @@
+/*
+
+HERE IS WHERE THE NAVBAR STYLING STARTS
+
+*/
+
+/* Style the topnav navigation bar */
+.navbar
+ {
+    width: 100%;
+    display: inline-block;
+ }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .useraccess a {
+      float: right;
+      display: block;
+    }
+  }

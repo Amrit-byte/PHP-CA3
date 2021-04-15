@@ -1,22 +1,20 @@
 /*
 
-HERE IS WHERE THE TOPNAVBAR STYLING STARTS
+HERE IS WHERE THE ADMIN ACCESS STYLING STARTS
 
 */
 
 /* Style the topnav navigation bar */
-.navbar {
+.adminaccess {
     width: 100%;
-    background-color: rgb(8, 8, 8);
     overflow: auto;
-    
-
-     /* Navbar links */
+         /* Navbar links */
     a {
       float: left;
-      text-align: center;
-      padding: 12px;
-      color: lavenderblush;
+      text-align: left;
+      margin: 0;
+      padding: .5em 0;
+      color: black;
       text-decoration: none;
       font-size:150%;
 
@@ -31,8 +29,8 @@ HERE IS WHERE THE TOPNAVBAR STYLING STARTS
   
   /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
   @media screen and (max-width: 500px) {
-    .navbar a {
-      float: none;
+    .adminaccess a {
+      float: left;
       display: block;
     }
   }
