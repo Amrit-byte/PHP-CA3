@@ -8,7 +8,7 @@
     <script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
     <script language="JavaScript" src="scripts/login&registration-validation.js" type="text/javascript"></script>
     <script language="JavaScript" src="scripts/add&edit form-validation.js" type="text/javascript"></script>
-    <script language="JavaScript" src="scripts/contact-form-validation.js" type="text/javascript"></script>
+    <script language="JavaScript" src="scripts/contact&payment form-validation.js" type="text/javascript"></script>
 </head>
 
 <!-- the body section -->

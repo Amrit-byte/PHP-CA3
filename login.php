@@ -96,7 +96,7 @@ if (isset($_POST['login'])) {
             <br>
 
             <label for="password">Password: </label>
-            <input type="text" name="password" id="password" required placeholder="Simonclarke123" class="text-input" onBlur="password_validation();" /><span id="password_err"></span>
+            <input type="password" name="password" id="password" required placeholder="Simonclarke123" class="text-input" onBlur="password_validation();" /><span id="password_err"></span>
             <br>
 
             <input type="submit" name="login" value="Login">

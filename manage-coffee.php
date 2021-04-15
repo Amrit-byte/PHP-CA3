@@ -14,21 +14,7 @@ session_start();
 //     exit;
 
 // }
-if (!isset($_SESSION['user_id']) || $_SESSION['user_id'] != 37 || !isset($_SESSION['logged_in'])) {
-    //User not logged in. Redirect them back to the login.php page.
-    header('Location: login.php');
-    echo 'Sorry No Access unless Admin';
-    exit;
-} else {
-    echo 'Hello Admin  !   '; 
-}
 
-
-/**
- * Print out something that only logged in users can see.
- */
-
-echo ' Congratulations ! You are logged in !   ';
 
 require_once('database.php');
 
@@ -100,6 +86,29 @@ $statement3->closeCursor();
         <section>
             <!-- display a table of records -->
             <h2><?php echo $category_name; ?></h2>
+
+            <div class="loginmessage">
+                <?php
+                if (!isset($_SESSION['user_id']) || $_SESSION['user_id'] != 37 || !isset($_SESSION['logged_in'])) {
+                    //User not logged in. Redirect them back to the login.php page.
+                    header('Location: login.php');
+                    echo 'Sorry No Access unless Admin';
+                    exit;
+                } else {
+                    echo 'Hello Admin  !   ';
+                }
+
+
+                /**
+                 * Print out something that only logged in users can see.
+                 */
+
+                echo ' Congratulations ! You are logged in !   ';
+                ?>
+
+            </div>
+
+
             <table>
                 <tr>
                     <th>Image <br><i class="fa fa-camera-retro"></i></th>
@@ -110,7 +119,7 @@ $statement3->closeCursor();
                     <th>Add <br><i class="fa fa-plus-square"></i></th>
                     <th>Edit <br><i class="fa fa-edit"></i></th>
                     <th>Delete<br><i class="fa fa-recycle"></i></th>
-                    
+
                 </tr>
                 <?php foreach ($records as $record) : ?>
                     <tr>
