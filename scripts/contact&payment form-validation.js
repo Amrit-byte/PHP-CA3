@@ -84,7 +84,7 @@ function cardnumber_validation() {
     var cardnumber_value = document.getElementById("cardnumber").value;
     var cardnumber_length = cardnumber_value.length;
     if (cardnumber_length < 7 || cardnumber_length > 17) {
-        document.getElementById('cardnumber_err').innerHTML = 'Numbers must be between 16 Digits';
+        document.getElementById('cardnumber_err').innerHTML = 'Numbers must be 16 Digits';
         userid_name.focus();
         document.getElementById('cardnumber_err').style.color = "#FF0000";
     }

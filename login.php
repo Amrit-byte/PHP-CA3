@@ -87,9 +87,9 @@ if (isset($_POST['login'])) {
         <h1>Login</h1>
         <form action="login.php" id="add_record_form" method="post">
 
-            <label for="email">Email: </label>
+            <!-- <label for="email">Email: </label>
             <input type="text" name="email" id="email" required placeholder="simonclarke@gmail.com" class="text-input" onBlur="email_validation();" /><span id="email_err"></span>
-            <br>
+            <br> -->
 
             <label for="username">Username:</label>
             <input type="text" name="username" id="username" required placeholder="Simon Clarke" class="text-input" onBlur="username_validation();" /><span id="name_err"></span>
